@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vasanth portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/me.jpg">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7c8209140f.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <nav>
+		<div class="navlinks">
+		  <a href="#home">
+			<img src="img/me.jpg" alt="Home" class="nav-img"/>
+		  </a>
+		  <a href="mailto:cssvasanth@gmail.com">contact</a>
+		  <a href="#projects">projects</a>
+		  <a href="https://drive.google.com/file/d/10rpixCTFrR5QOJ03eYKxN44y3vfjc5BB/view?usp=drivesdk">resume</a>
+		</div>
+	  </nav>
+	  
+    <div class="links">
+      <a target="_blank" href="https://github.com/vasanthselva"><i class="fa-brands fa-github fa-2x"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/vasanth-s-08927428a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+    </div>
+
+    <section id="home" class="non-nav">
+      <section id="aboutme">
+        <h1>Hi, My name is <span class="glowing">vasanth</span>.</h1>
+        <p>I am a computer science Engineer, who enjoys learning and scraping new stuff. I started coding when I was in college second year doing very basic stuff, like building static website with html. I pursued Computer Science undergraduate  in chendhuran college of engineering and technology, in pudukkottai. Lately, I have been searching for a job.</p>
+        <p>You can reach me at &nbsp; <span style="color: white; font-size: larger">email</span> &nbsp;
+          <i id="copyicon" onclick="copyClipBoard()" style="color: lightgray;" class="fa-solid fa-clipboard fa-lg"></i>
+        </p>
+
+        <br/>
+        <p>
+          Here are a few technologies I have been working with:
+        </p>
+        <ul class="tech-stack">
+          <li><span><i class="fa-brands fa-python"></i></span>python</li>
+          <li><span><i class="fa-brands fa-html5"></i></span> html</li>
+		  <li><span><i class="fa-brands fa-css3-alt"></i></span>css</li>
+          <li><span><i class="fa-brands fa-js"></i></i></span>  jscript</li>
+          <li><span><i class="fa-brands fa-react fa-lg"></i></span> React js</li>
+          <li><span><i class="fa-solid fa-database fa-lg"></i></span> MongoDB</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <div>
+          <a target="_blank" href="https://github.com/vasanthselva/projects/tree/main/gym%20chatbot">
+            <img class="project-img" src="img/chatbot.jfif"/>
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://github.com/vasanthselva/projects/tree/main/BATCH-5%20SIGN%20LANGUAGE%20DETECTION">
+            <img class="project-img" src="img/sign language.jfif"/>
+          </a>
+        </div>
+        <div>
+          <a href="resume.pdf" download>
+            <img class="resume-img" src="img/downlord resume.jpg" alt="Download Resume"/>
+        </a>
+        
+        </div>
+      </section>
+    </section>
+    <hr />
+    <footer class="footer">
+      <a target="_blank" href="https://github.com/vasanthselva"><i class="fa-brands fa-github fa-lg"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/vasanth-s-08927428a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+        2024 &nbsp; &nbsp;
+      <i style="font-weight: 2; color: white;" class="fas fa-copyright fa-lg"></i>
+    </footer>
+
+    <script>
+      function copyClipBoard() {
+        navigator.clipboard.writeText('cssvasanth@gamil.com');
+        const i = document.getElementById('copyicon');
+        i.style.color = "grey";
+      }
+    </script>
+  </body>
+</html>
