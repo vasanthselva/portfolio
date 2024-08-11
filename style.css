@@ -71,26 +71,6 @@ img {
     height: 100%;
     width: 100%;
 }
-#resume {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#resume div {
-    padding: 2%;
-    margin: 2%;
-    width: 50%;
-    height: 250px;
-    transition: 0.5s;
-}
-
-.resume-img {
-    height: 100%;
-    width: 100%;
-}
-
 nav {
     width: 95%;
     display: flex;
