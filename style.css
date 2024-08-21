@@ -146,7 +146,7 @@ header {
 
 
 /* Styles for tablets and mobile devices */
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 730px) {
   body {
         font-size: 14px;
     }
