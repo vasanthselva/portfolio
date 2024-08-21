@@ -115,6 +115,7 @@ body {
   }
   
   .hamburger {
+    align-items: right;
     display: none;
     flex-direction: column;
     cursor: pointer;
