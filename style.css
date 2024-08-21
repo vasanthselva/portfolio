@@ -120,13 +120,10 @@ header {
 }
 
 /* Hamburger menu button */
+
 .hamburger {
-  display: none; /* Hide by default on desktop */
-  background: none;
-  border: none;
   cursor: pointer;
-  padding: 10px;
-  margin-right: auto;
+  display: none;
 }
 
 .hamburger span {
