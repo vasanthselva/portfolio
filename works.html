@@ -21,6 +21,7 @@
         <span></span>
         <span></span>
         <span></span>
+        <span></span>
       </button>
       <nav class="mobile-nav">
         <a href="mailto:cssvasanth@gmail.com">Contact</a>
@@ -73,5 +74,19 @@
           2024 &nbsp; &nbsp;
         <i style="font-weight: 2; color: white;" class="fas fa-copyright fa-lg"></i>
       </footer>
+    <script>
+  // Get the hamburger button and mobile nav elements
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+
+// Function to toggle the mobile nav
+function toggleMenu() {
+  // Toggle the visibility of the mobile nav
+  mobileNav.classList.toggle('show');
+}
+
+// Add event listener to the hamburger button
+hamburger.addEventListener('click', toggleMenu);
+</script>
   </body>
 </html>
