@@ -115,19 +115,24 @@
         2024 &nbsp; &nbsp;
       <i style="font-weight: 2; color: white;" class="fas fa-copyright fa-lg"></i>
     </footer>
-	    <script src="script.js" defer>
-	 // Get the hamburger button and mobile nav elements
-const hamburger = document.querySelector('.hamburger');
-const mobileNav = document.querySelector('.mobile-nav');
+	    <script>
+	 document.addEventListener('DOMContentLoaded', function() {
+    // Get the hamburger button and mobile nav elements
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.querySelector('.mobile-nav');
 
-// Function to toggle the mobile nav
-function toggleMenu() {
-  // Toggle the 'active' class on the mobile nav
-  mobileNav.classList.toggle('active');
-}
+    // Function to toggle the mobile nav
+    function toggleMenu() {
+        // Toggle the 'active' class on the mobile nav
+        mobileNav.classList.toggle('active');
+    }
 
-// Add event listener to the hamburger button
-hamburger.addEventListener('click', toggleMenu);
+    // Add event listener to the hamburger button
+    if (hamburger) {
+        hamburger.addEventListener('click', toggleMenu);
+    }
+});
+
 
       function copyClipBoard() {
         navigator.clipboard.writeText('cssvasanth@gmail.com');
