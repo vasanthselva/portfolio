@@ -97,6 +97,7 @@ body {
   }
   
   .mobile-menu {
+    align-items: right;
     display: none;
     flex-direction: column;
     position: absolute;
