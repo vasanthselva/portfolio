@@ -70,14 +70,15 @@ img {
   height: 100%;
   width: 100%;
 }
+
 /* Header styling */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 10px;
   background-color: rgb(11, 25, 46);
   color: rgb(118, 129, 161);
+  box-shadow: 0 0 15px #058bf9;
 }
 
 /* Desktop navigation */
@@ -95,15 +96,15 @@ header {
 
 /* Mobile navigation - initially hidden */
 .mobile-nav {
+  width: 130px;
   display: none;
   position: absolute;
   top: 60px; /* Adjust based on header height */
   right: 20px;
   background-color: rgb(11, 25, 46);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 15px rgb(118, 129, 161);
   flex-direction: column;
-  gap: 10px;
   padding: 10px;
 }
 
@@ -152,7 +153,6 @@ header {
     display: flex;
   }
 }
-
 
 
 #projects div:hover {
