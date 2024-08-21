@@ -100,10 +100,24 @@ nav {
     object-fit: cover; /* Ensures the image covers the circle area */
   }  
 
-@media (max-width: 860px) {
-    #projects {
-        flex-direction: column;
+
+/* Base styles for desktop */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for tablets and mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
     }
+    .container {
+        padding: 10px;
+    }
+    /* More mobile-specific styles */
+}
 
     nav div a {
         font-size: medium;
