@@ -141,13 +141,14 @@ header {
 }
 
 
-
-
-/* Media query for mobile */
-@media (max-width: 750px) {
-  .desktop-nav {
-    display: none; /* Hide desktop nav on mobile */
-  }
+/* Styles for tablets and mobile devices */
+@media only screen and (max-width: 768px) {
+  body {
+        font-size: 14px;
+    }
+  .container {
+        padding: 10px;
+    }
 
   .hamburger {
     display: block;
