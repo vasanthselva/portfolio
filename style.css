@@ -244,5 +244,5 @@ button {
 }
 
 button:hover {
-  visibility: hidden;         /* Hide the button by making it fully transparent */
+  color: rgb(118, 129, 161);         /* Hide the button by making it fully transparent */
 }
