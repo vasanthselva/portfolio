@@ -244,5 +244,5 @@ button {
 }
 
 button:hover {
-  opacity: 0;             /* Hide the button by making it fully transparent */
+  visibility: hidden;         /* Hide the button by making it fully transparent */
 }
