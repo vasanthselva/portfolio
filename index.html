@@ -135,10 +135,13 @@
 
 
       function copyClipBoard() {
-        navigator.clipboard.writeText('cssvasanth@gmail.com');
-        const i = document.getElementById('copyicon');
-        i.style.color = "grey";
-      }
+  navigator.clipboard.writeText('cssvasanth@gmail.com').then(() => {
+    const i = document.getElementById('copyicon');
+    i.style.color = "grey";
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
     </script>
   </body>
 </html>
