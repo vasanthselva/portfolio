@@ -131,14 +131,10 @@ header {
   .hamburger {
     
     display: block;  
-     background-color: rgb(11, 25, 46);
-    color: rgb(118, 129, 161);    /* Optional: adds rounded corners */
 }
 
     .mobile-nav.active {
     display: flex;
-    background-color: #333;
-    padding: 10px;
 }
 
 }
