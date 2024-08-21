@@ -106,26 +106,41 @@ header {
   background: #fff;
   margin: 5px 0;
 }
-/* Mobile navigation - initially hidden */
 .mobile-nav {
-  
-  display: none;
-  position: absolute;
-  top: 60px; /* Adjust based on header height */
-  right: 20px;
-  background-color: rgb(11, 25, 46);
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgb(118, 129, 161);
-  flex-direction: column;
-  padding: 10px;
+  display: none; /* Ensure it is hidden by default */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  background-color: #333; /* Background color for visibility */
+  position: fixed; /* Fix it to the viewport */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  opacity: 0; /* Start with invisible */
+  transform: translateY(-100%); /* Start off-screen */
+  z-index: 1000; /* Ensure it is on top */
+}
+
+.mobile-nav.active {
+  display: flex; /* Show when active */
+  opacity: 1; /* Make it visible */
+  transform: translateY(0); /* Move it into view */
 }
 
 .mobile-nav a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 5px;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  padding: 15px; /* Space around items */
+  font-size: 18px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
+
+.mobile-nav a:hover {
+  background-color: #555; /* Change background on hover */
+}
+
+
 
 
 /* Media query for mobile */
