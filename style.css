@@ -109,13 +109,13 @@ header {
 .mobile-nav {
   display: none; /* Ensure it is hidden by default */
   flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  background-color: #333; /* Background color for visibility */
+  align-items: left; /* Center items horizontally */
+  background-color: rgb(11, 25, 46); /* Background color for visibility */
   position: fixed; /* Fix it to the viewport */
   top: 0; /* Align to the top */
   left: 0; /* Align to the left */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 30%; /* Full width */
+  height: 30%; /* Full height */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
   opacity: 0; /* Start with invisible */
   transform: translateY(-100%); /* Start off-screen */
