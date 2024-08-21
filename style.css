@@ -131,8 +131,7 @@ header {
   .hamburger {
     
     display: block;         /* Ensures the element is displayed as a block-level element */
-    background-color: rgb(11, 25, 46);
-    border-radius: 10px;     /* Optional: adds rounded corners */
+    color: rgb(118, 129, 161);    /* Optional: adds rounded corners */
 }
 
     .mobile-nav.active {
