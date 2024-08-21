@@ -93,12 +93,12 @@ nav {
     color: inherit;
     margin-left: 15px;
 }
-
 .nav-img {
-    width: 20%;
-    background-color: aliceblue;
-    border: 100%;
-}
+    border-radius: 50%;
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image covers the circle area */
+  }  
 
 @media (max-width: 860px) {
     #projects {
@@ -181,3 +181,20 @@ a:hover {
 
 footer a:visited
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  
