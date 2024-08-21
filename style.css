@@ -100,7 +100,7 @@ body {
     align-items: right;
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: left;
     top: 60px;
     right: 20px;
     background-color: #2f85be;
