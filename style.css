@@ -92,18 +92,45 @@ header {
     text-decoration: none;
 }
 
+/* Basic styles for the hamburger button */
 .hamburger {
-    cursor: pointer;
-    display: none;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  background: transparent; /* No background color */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0; /* Remove padding */
+  position: relative; /* Needed for positioning spans */
+  z-index: 1000; /* Ensure button is clickable over other elements */
 }
 
+/* Style each bar in the hamburger */
 .hamburger span {
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    margin: 5px 0;
-    display: block;
+  display: block;
+  width: 30px; /* Adjust width as needed */
+  height: 4px; /* Adjust height as needed */
+  background-color: #333; /* Color of the bars */
+  margin: 5px 0; /* Space between bars */
+  transition: all 0.3s ease; /* Smooth transition for animations */
 }
+
+/* Optional: Add animations for active state */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
 .mobile-nav {
     display: none;
     flex-direction: column;
