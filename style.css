@@ -102,21 +102,32 @@ header {
     height: 3px;
     background: #fff;
     margin: 5px 0;
-    display: flex;
+    display: block;
 }
-
 .mobile-nav {
-    display: none;
+    display: none; /* Change to 'block' or 'flex' to show */
     flex-direction: column;
     position: absolute;
-    top: 70px; /* Adjusted to avoid overlap with header */
+    top: 70px; /* Adjust as needed to avoid overlap with header */
     right: 10px;
-    background-color: rgb(11, 25, 46);
-    width: 150px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgb(118, 129, 161);
+    background-color: rgb(11, 25, 46); /* Dark background for contrast */
+    width: 200px; /* Increase width for better visibility */
+    padding: 15px; /* Increase padding for more space */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    opacity: 0; /* Start hidden */
+    transform: translateY(-10px); /* Initial position for animation */
 }
+
+.mobile-nav.show {
+    display: flex; /* Show menu */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to normal position */
+}
+
+
 
 .mobile-nav a {
     color: #fff;
