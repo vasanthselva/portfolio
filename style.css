@@ -70,75 +70,99 @@ img {
   height: 100%;
   width: 100%;
 }
-
-header {
-    margin-top: 25px;
-    background-color: rgb(11, 25, 46);
-    color: rgb(118, 129, 161);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #058bf9;
+/* Basic reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Desktop navigation */
 .desktop-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+  display: flex;
+  gap: 20px;
 }
 
 .desktop-nav a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-.hamburger {
-  cursor: pointer;
+.desktop-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile navigation - initially hidden */
+.mobile-nav {
   display: none;
+  position: absolute;
+  top: 60px; /* Adjust based on header height */
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+}
+
+.mobile-nav a:hover {
+  background-color: #444;
+}
+
+/* Hamburger menu button */
+.hamburger {
+  display: none; /* Hide by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: auto;
 }
 
 .hamburger span {
-  width: 50%;
-height: 5px;
-background: #f00;
-margin: 10px;
-display: inline-block;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  transition: 0.3s;
 }
 
-.mobile-nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px; /* Adjusted to avoid overlap with header */
-    right: 10px;
-    background-color: rgb(11, 25, 46);
-    width: 150px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgb(118, 129, 161);
-}
-.mobile-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
-    display: block;
-}
-
+/* Media query for mobile */
 @media (max-width: 768px) {
-    .desktop-nav {
-        display: none;
-    }
-    
+  .desktop-nav {
+    display: none; /* Hide desktop nav on mobile */
+  }
+
   .hamburger {
-    
-    display: block;  
-}
-
-    .mobile-nav.active {
+    display: block;
+  }
+  
+  .mobile-nav.show {
     display: flex;
+  }
 }
 
-}
 
 #projects div:hover {
   box-shadow: 0 4px 8px 0 rgba(48, 117, 203, 0.2), 0 6px 20px 0 rgba(0, 255, 38, 0.19);
