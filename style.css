@@ -96,7 +96,7 @@ header {
 
 /* Mobile navigation - initially hidden */
 .mobile-nav {
-  width: 130px;
+  
   display: none;
   position: absolute;
   top: 60px; /* Adjust based on header height */
