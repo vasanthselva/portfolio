@@ -116,10 +116,10 @@ header {
   align-items: left; /* Center items horizontally */
   background-color: rgb(11, 25, 46); /* Background color for visibility */
   position: fixed; /* Fix it to the viewport */
-  top: 30; /* Align to the top */
+  top: 31; /* Align to the top */
   left: 0; /* Align to the left */
   width: 30%; /* Full width */
-  height: 25%; /* Full height */
+  height: 28%; /* Full height */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
   opacity: 0; /* Start with invisible */
   transform: translateY(-100%); /* Start off-screen */
