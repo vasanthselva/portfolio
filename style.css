@@ -70,7 +70,7 @@ img {
   height: 100%;
   width: 100%;
 }
-/* Basic reset and box-sizing */
+
 * {
   margin: 0;
   padding: 0;
@@ -83,24 +83,21 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(11, 25, 46);
+  color: rgb(118, 129, 161);
 }
 
 /* Desktop navigation */
 .desktop-nav {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 }
 
 .desktop-nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
-}
-
-.desktop-nav a:hover {
-  text-decoration: underline;
 }
 
 /* Mobile navigation - initially hidden */
@@ -109,9 +106,9 @@ header {
   position: absolute;
   top: 60px; /* Adjust based on header height */
   right: 20px;
-  background-color: #333;
+  background-color: rgb(11, 25, 46);
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgb(118, 129, 161);
   flex-direction: column;
   gap: 10px;
   padding: 10px;
@@ -126,7 +123,7 @@ header {
 }
 
 .mobile-nav a:hover {
-  background-color: #444;
+  background-color: rgb(11, 25, 46);
 }
 
 /* Hamburger menu button */
@@ -136,7 +133,7 @@ header {
   border: none;
   cursor: pointer;
   padding: 10px;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 .hamburger span {
@@ -162,6 +159,7 @@ header {
     display: flex;
   }
 }
+
 
 
 #projects div:hover {
