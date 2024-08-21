@@ -113,7 +113,7 @@ header {
   display: block;
   width: 30px; /* Adjust width as needed */
   height: 4px; /* Adjust height as needed */
-  background-color: #333; /* Color of the bars */
+  background-color: #fff; /* Color of the bars */
   margin: 5px 0; /* Space between bars */
   transition: all 0.3s ease; /* Smooth transition for animations */
 }
