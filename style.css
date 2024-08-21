@@ -102,7 +102,7 @@ header {
     height: 3px;
     background: #fff;
     margin: 5px 0;
-    display: block;
+    display: flex;
 }
 
 .mobile-nav {
