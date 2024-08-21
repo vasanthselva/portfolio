@@ -115,10 +115,6 @@ header {
   padding: 5px;
 }
 
-.mobile-nav a:hover {
-  background-color: rgb(11, 25, 46);
-}
-
 /* Hamburger menu button */
 
 .hamburger {
