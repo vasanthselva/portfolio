@@ -94,18 +94,22 @@ header {
   text-decoration: none;
 }
 /* Hamburger menu button */
-
 .hamburger {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
   cursor: pointer;
-  display: none;
+  padding: 0;
 }
+
 .hamburger span {
   display: block;
-  width: 100%;
+  width: 25px;
   height: 3px;
-  background: #fff;
+  background-color: white;
   margin: 5px 0;
 }
+
 .mobile-nav {
   display: none; /* Ensure it is hidden by default */
   flex-direction: column; /* Stack items vertically */
