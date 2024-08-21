@@ -123,22 +123,6 @@ header {
   padding: 5px;
   display: block;
 }
-
-@media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    margin: 10px;
-  }
-
-  .mobile-nav.active {
-    display: flex;
-  }
-}
-
 .non-nav {
   margin: 35px;
 }
