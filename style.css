@@ -72,77 +72,70 @@ img {
 }
 
 header {
-  margin-top: 25px;
-  background-color: rgb(11, 25, 46);
-  color: rgb(118, 129, 161);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #058bf9;
+    margin-top: 25px;
+    background-color: rgb(11, 25, 46);
+    color: rgb(118, 129, 161);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #058bf9;
 }
 
 .desktop-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .desktop-nav a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 .hamburger {
-  cursor: pointer;
-  display: none;
+    cursor: pointer;
+    display: none;
 }
 
 .hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #fff;
-  margin: 5px 0;
-  display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+    display: block;
 }
 
 .mobile-nav {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 50px;
-  right: 10px;
-  background-color: rgb(11, 25, 46);
-  width: 150px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgb(118, 129, 161);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjusted to avoid overlap with header */
+    right: 10px;
+    background-color: rgb(11, 25, 46);
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(118, 129, 161);
 }
 
 .mobile-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
-  display: block;
-}
-@media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .hamburger {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
     display: block;
-    margin: 10px;
-  }
-
-  .mobile-nav.active {
-    display: flex;
-  }
 }
 
-.non-nav {
-  margin: 35px;
-}
-.non-nav {
-  margin: 35px;
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav.active {
+        display: flex;
+    }
 }
 
 #projects div:hover {
