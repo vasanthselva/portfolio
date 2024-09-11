@@ -3,8 +3,8 @@ body {
   flex-direction: column;     
   justify-content: center;    
   align-items: center; /* Adjusted to center vertically */
-  padding: 0; /* Removed auto padding */
-  margin: 0; /* Removed auto margin */
+  padding: auto; 
+  margin: auto; 
   max-width: 950px;          
   min-height: 100vh;         
   background-color: rgb(11, 25, 46);
