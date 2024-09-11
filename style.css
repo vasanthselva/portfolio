@@ -1,19 +1,28 @@
 body {
-    display: flex;             
-    flex-direction: column;     
-    justify-content: center;    
-    align-items: flex;        
-    padding: auto;
-    margin: auto;           
-    max-width: 950px;          
-    min-height: 100vh;         
-    background-color: rgb(11, 25, 46);
-    color: rgb(118, 129, 161);
-    font-size: medium;
-    transition: 0.2s;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;  
-}  
+  display: flex;             
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center; /* Adjusted to center vertically */
+  padding: 0; /* Removed auto padding */
+  margin: 0; /* Removed auto margin */
+  max-width: 950px;          
+  min-height: 100vh;         
+  background-color: rgb(11, 25, 46);
+  color: rgb(118, 129, 161);
+  font-size: medium;
+  transition: 0.2s; /* Specify the property for the transition effect */
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;  
+}
+
+/* Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    max-width: 100%; /* Adjust max-width to full screen width */
+    padding: 20px; /* Add some padding for mobile view */
+    font-size: small; /* Reduce font size for mobile view */
+  }
+}
   
 body > * {
   transition: 0.2s;
