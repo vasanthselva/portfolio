@@ -160,12 +160,6 @@ header {
   background-color: #555; /* Change background on hover */
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-    padding: 10px;
-  }
-
   body {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
