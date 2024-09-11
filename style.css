@@ -121,8 +121,6 @@ header {
 .mobile-nav {
   display: none; /* Ensure it is hidden by default */
   flex-direction: column; /* Stack items vertically */
-  flex-content: center;
-  justify-content: space-between;
   align-items: center;  
   background-color: rgb(11, 25, 46); 
   position: center; /* Fix it to the viewport */
@@ -143,6 +141,7 @@ header {
 
 .mobile-nav a {
   text-decoration: none; /* Remove underline */
+  align-items: center; 
   color: white; /* Text color */
   padding: 15px; /* Space around items */
   font-size: 18px; /* Font size */
