@@ -121,8 +121,8 @@ header {
 .mobile-nav {
   display: none; /* Ensure it is hidden by default */
   flex-direction: column; /* Stack items vertically */
-  align-items: left; /* Center items horizontally */
-  background-color: rgb(11, 25, 46); /* Background color for visibility */
+  align-items: center;  
+  background-color: rgb(11, 25, 46); 
   position: fixed; /* Fix it to the viewport */
   top: 31; /* Align to the top */
   left: 2; /* Align to the left */
