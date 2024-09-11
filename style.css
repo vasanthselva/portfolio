@@ -121,10 +121,9 @@ header {
 .mobile-nav {
   display: none; /* Ensure it is hidden by default */
   flex-direction: column; /* Stack items vertically */
-  text-align: center;
-  align-items: center;  
+  text-align: center; 
   background-color: rgb(11, 25, 46); 
-  position: fixed; /* Fix it to the viewport */
+  position: center; /* Fix it to the viewport */
   top: 31; /* Align to the top */
   width: 30%; /* Full width */
   height: 28%; /* Full height */
