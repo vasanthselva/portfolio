@@ -141,7 +141,7 @@ header {
 
 .mobile-nav a {
   text-decoration: none; /* Remove underline */
-  align-items: center; 
+  justify-content: center; 
   color: white; /* Text color */
   padding: 15px; /* Space around items */
   font-size: 18px; /* Font size */
