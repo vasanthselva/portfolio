@@ -3,7 +3,7 @@ body {
     flex-direction: column;     
     justify-content: center;    
     align-items: flex;        
-    padding: 0;
+    padding: auto;
     margin: auto;           
     max-width: 950px;          
     min-height: 100vh;         
