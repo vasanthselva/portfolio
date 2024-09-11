@@ -13,17 +13,7 @@ body {
   transition: 0.2s; /* Specify the property for the transition effect */
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;  
-}
-
-/* Mobile view (max-width: 768px) */
-@media (max-width: 768px) {
-  body {
-    max-width: 100%; /* Adjust max-width to full screen width */
-    padding: 20px; /* Add some padding for mobile view */
-    font-size: small; /* Reduce font size for mobile view */
-  }
-}
-  
+} 
 body > * {
   transition: 0.2s;
 }
@@ -159,9 +149,12 @@ header {
 .mobile-nav a:hover {
   background-color: #555; /* Change background on hover */
 }
-
+/* Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
   body {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    max-width: 100%; /* Adjust max-width to full screen width */
+    padding: 20px; /* Add some padding for mobile view */
+    font-size: small; /* Reduce font size for mobile view */
   }
   .desktop-nav {
     display: none; /* Hide desktop nav on mobile */
