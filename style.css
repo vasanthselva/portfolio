@@ -2,7 +2,7 @@ body {
   display: flex;             
   flex-direction: column;     
   justify-content: center;    
-  align-items: center; /* Adjusted to center vertically */
+  align-items: flex; /* Adjusted to center vertically */
   padding: auto; 
   margin: auto; 
   max-width: 950px;          
