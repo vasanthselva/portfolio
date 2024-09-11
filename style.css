@@ -3,6 +3,7 @@ body {
   flex-direction: column;     
   justify-content: center;    
   align-items: flex; /* Adjusted to center vertically */
+  text-align: justify;
   padding: auto; 
   margin: auto; 
   max-width: 950px;          
@@ -155,6 +156,7 @@ header {
     max-width: 100%; /* Adjust max-width to full screen width */
     padding: 20px; /* Add some padding for mobile view */
     font-size: small; /* Reduce font size for mobile view */
+    text-align: justify;
   }
   .desktop-nav {
     display: none; /* Hide desktop nav on mobile */
